@@ -1,0 +1,455 @@
+.,                                                                                                                                                                 MANUAL TESTING PROJECT ,,,,,,
+,,,,,,,
+,                                                                                                                                                                          SWAG LABS,,,,,,
+,Version No:-V1                                                           ,,,,Tested By:-Aleena Paul,,
+,Verified By:-Ebin Kuriyan,,,,Tested Date:-17-09-25,,
+,"Environmental Details:-Windows,Google Chrome",,,,Module Name:-Login Page,,
+,Test ID,Test Description,Test Procedure,Test Data,Expected Result,Actual Result,Status
+,"SL_LP_01
+","Check whether the user can log in
+by entering valid credentials. Verify that 
+the system redirects the user to the 
+Products page successfully.","1. Open login page
+2. Enter standard_user in username
+3. Enter secret_sauce in password
+4. Click Login",https://www.saucedemo.com,"The user should be redirected to the Products
+page after entering valid credentials. The page 
+must load properly with all elements visible.","The login was successful, and the user was redirected 
+as expected. The Products page loaded correctly 
+without any errors.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_02
+","Check whether the problem_user is 
+able to log in using valid credentials. 
+Verify that after login, the system 
+redirects the user to the Products page.","1. Open login page
+2. Enter problem_user in username
+3. Enter secret_sauce in password
+4. Click Login",https://www.saucedemo.com,"The problem user should also be able to log in
+ successfully using valid credentials. The system 
+must redirect the user to the Products page without
+ issues.","The user logged in without any errors, as expected.
+ The Products page was displayed correctly after login.
+ All page elements loaded properly and navigation 
+worked as intended.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_03
+","Check whether the performance_glitch_
+The user can log in using valid 
+credentials.Confirm that the user is 
+redirected to Products page after login.","1. Open login page
+2. Enter performance_glitch_user in
+    username
+3. secret_sauce in password ,Click Login",https://www.saucedemo.com,"The performance_glitch_user should be able to log
+ in with valid credentials. The login process may
+ take slightly longer than normal. The user should 
+still be redirected successfully to Products page.","The login took a bit longer, but the user landed on the 
+Products page. The page loaded correctly without any 
+functional errors. All items and navigation elements
+were displayed as expected.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_04
+","Check whether error_user can login 
+successfully.Verify that the user is 
+redirected to the Products page after
+login.","1. Open login page
+2. Enter error_user in username
+3. Enter secret_sauce in password
+4. Click Login",https://www.saucedemo.com,"Error_user should login successfully; no error 
+messages expected.The Products page should be 
+displayed after successful login.All items and menus
+ should load properly without glitches.","The user logged in with valid credentials.
+The Products page opened as expected after login.
+Some UI inconsistencies were noticed, but functionality 
+worked.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_05
+","Check if the visual_user can log in with
+correct details.Make sure no error
+message is shown during login.Confirm
+that the user is taken to  Products page.","1. Open login page
+2. Enter visual_user in username
+3. Enter secret_sauce in password
+4. Click Login",https://www.saucedemo.com,"The visual_user should log in without any problems.
+After login, the Products page should open 
+normally.All products and menus should appear 
+clearly without mistakes.","The user logged in successfully with valid details.
+After logging in, the Products page was displayed 
+properly. All items and menus appeared as expected 
+without problems.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_06
+","Check if the Enter key can be used to 
+log in with valid details.Ensure it works
+ the same as clicking the Login button.","1. Open login page
+2. Enter valid credentials
+3. Press Enter",https://www.saucedemo.com,"Login should be successful when Enter is pressed.
+The user should be redirected to the Products page.
+All items, buttons, and menus should appear 
+correctly on the page.","Login worked by pressing the Enter key with valid 
+credentials.The user was redirected to the Products 
+page as expected.The page loaded properly without any 
+errors or delays.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_07
+","Check whether the password entered in
+the field is masked .Ensure that typed
+Characterss are not visible as plain 
+text.","1.Open the login page.
+2.Enter a valid username.
+3.Enter a valid password.
+4.Press the Enter key.",https://www.saucedemo.com,"Password should be displayed as bullets  while
+typing.The field should not reveal any typed
+characters.Login should still work properly after 
+entering the password.","The password field masked all typed characters with
+ bullet .Typed characters were not visible on the screen.
+Login worked normally after entering the masked 
+password.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_08
+","Check whether the login button become
+active after entering valid details.Ensure
+the button is clickable once username
+and password are entered.","1. Open login page
+2. Enter valid username
+3. Enter valid password
+4.click login button",https://www.saucedemo.com,"Login button should be enabled after entering valid
+ username and password.The user should be able 
+to click the button to log in.The Products page
+ should open successfully after clicking.","The login button was enabled after entering credentials.
+The user clicked the button and logged in successfully.
+The Products page loaded without any errors or delays. ",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_09
+","Check whether placeholders are
+displayed in fields. Ensure that the 
+placeholder text is meaningful  guides 
+the user about the expected input.","1. Open login page
+2. Inspect username field
+3. Inspect password field",https://www.saucedemo.com,"Username and password fields should show 
+placeholder text (“Username” and “Password”). 
+The placeholder text should be clearly visible and 
+guide the user about the expected input. ","Placeholders were displayed correctly in the UI, 
+appearing in the appropriate fields. They were 
+clearly visible.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_10
+","check whether the login page loads 
+within 3 seconds. The page should load 
+completely without any missing
+elements or broken links.","1. Navigate to login page
+2. Measure page load time
+3.click login button",https://www.saucedemo.com,"
+The login page should load quickly, within 3 
+seconds. All elements, including input fields, buttons
+and text, should appear correctly without delays.
+","Page loaded fast enough within the expected time. All 
+elements were displayed correctly, and the user could 
+interact with the page immediately without any delay.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_11
+","Check whether the locked-out user
+cannot log in. The system should 
+prevent access for this user even with 
+valid credentials. ","1. Open login page
+2. Enter locked_out_user in username
+3. Enter secret_sauce in password
+4. Click Login",https://www.saucedemo.com,"Locked_out_user should not be able to log in; an 
+error message is expected. The system must 
+prevent access even with valid credentials.","Error displayed: ‘Sorry, this user has been locked out.’ 
+The message is clear, visible, and prevents the 
+locked-out user from accessing the application.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_12
+","Check whether system shows error for
+ blank username & password. The login
+ should be prevented if either or both
+ fields are empty.","1. Open login page
+2. Leave both fields blank
+3. Click Login",https://www.saucedemo.com,"Blank username and password should trigger an 
+error: ‘Username is required.’ The system must 
+prevent login until the username is entered.","System correctly displayed the error message. The 
+message was clear, visible, and prevented the user
+ from logging in until valid credentials were entered.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_13
+","Check whether system shows error for
+ blank password. The login should be
+ prevented if the password field is empty.","1. Open login page
+2. Enter standard_user in username
+3. Leave password blank
+4. Click Login",https://www.saucedemo.com,"Blank password should trigger error: ‘Password is 
+required.’ The system must prevent login until the
+password is entered.","The system showed the appropriate error message. The 
+message was clear, visible, and prevented the user from
+logging in until a valid password was entered.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_14
+","Check whether system shows error for
+ blank username. The login should be 
+blocked if the username field is empty.","1. Open login page
+2. Leave username blank
+3. Enter password
+4. Click Login",https://www.saucedemo.com,"Blank username should trigger error: ‘Username is 
+required.’ The system must prevent login until the 
+username is entered.","System displayed the correct error message. The 
+message was clear, visible, and successfully prevented
+ the user from logging in until the username was provided.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_15
+","Check whether system shows error for
+ wrong password. The login attempt
+ should be rejected if the entered
+ password is incorrect. ","1. Open login page
+2. Enter standard_user in username
+3. Enter wrongpass in password
+4. Click Login",https://www.saucedemo.com,"Wrong password with valid username should show:
+‘Username and password do not match.’ The 
+system must block access and ensure the use
+remains on the login page.","Error message displayed as expected. The message
+ was clear, visible, and correctly prevented access until
+ valid credentials were entered.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_16
+","Check whether system shows error for
+ wrong username. The login attempt 
+should be rejected if the entered
+ username does not exist. ","1. Open login page
+2. Enter wronguser in username
+3. Enter secret_sauce in password
+4. Click Login",https://www.saucedemo.com,"Wrong username with valid password should show:
+ ‘Username and password do not match.’ The 
+system must block the login attempt and ensure
+ the user stays on the login page.","Error message displayed as expected. The message
+ was clear, visible, and correctly prevented the user 
+from logging in with an invalid username.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_17
+","Check whether SQL injection attempt is
+ blocked. The system should prevent 
+any malicious input from being executed
+ as a database command.","1. Open login page
+2. Enter ' OR 1=1;-- in username
+3. Enter ' OR 1=1;-- in password
+4. Click Login",https://www.saucedemo.com,"SQL injection attempt should fail and displayn
+generic error: “Username and password do not 
+match.”","System rejected the input and displayed the error
+ correctly. The SQL injection attempt was blocked, no 
+sensitive data was exposed, and the user could not gain 
+unauthorized access.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_18
+","Check whether the system rejects
+ special characters. The login should be
+ blocked if the username or password
+ contains invalid symbols.","1. Open login page
+2. Enter @@@@ in username
+3. Enter #### in password
+4. Click Login",https://www.saucedemo.com,"Special characters in username/password should
+trigger an error message. The system must prevent
+login attempts with invalid symbols and clearly 
+inform the user to use only allowed characters.","System blocked invalid input and showed an error. The 
+user could not proceed with usernames.or passwords 
+containing special characters, ensuring that the system
+ enforces input validation correctly.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_19
+","Check whether system blocks long
+username. The login should be 
+prevented if the username exceeds the
+maximum allowed characters.","1. Open login page
+2. Enter 100+ character username
+3. Enter password
+4. Click Login",https://www.saucedemo.com,"Username longer than allowed characters should 
+trigger an error. The system must prevent login 
+attempts with excessively long usernames.","System displayed an error or blocked input. The user
+ could not proceed with a username longer than 
+allowed, ensuring that the system correctly enforces
+ input length restrictions.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_20
+","Check whether system enforces case
+sensitivity. The login should fail if the
+username or password case does not
+match exactly.","1. Open login page
+2. Enter Standard_User in username
+3. Enter Secret_Sauce in password
+4. Click Login",https://www.saucedemo.com,"Username/password with wrong case
+ (case-sensitive) should fail. The system must
+ reject login attempts if any letter in the username.","System rejected login with case mismatch and showed 
+an error. The error was clearly visible, and the user 
+could not access the application until the correct 
+case-sensitive credentials were entered.",PASS
+,,,,,,,
+,,,,,,,
+,"SL_LP_21
+","Check whether the  locked_out_user is
+able to log in using valid credentials. 
+Verify that after login, the system 
+redirects the user to the Products page.","1. Open login page
+2. Enter locked_out_user in username
+3. Enter secret_sauce in password
+4. Click Login",https://www.saucedemo.com,"Error message: 'Sorry, this user has been locked
+out.' Login should be blocked. The message must 
+be clear and visible, preventing the locked-out user 
+from accessing any part of the application.","User cannot log in, and error message is displayed. 
+The system successfully prevented access for the
+ locked-out account.",FAIL
+,,,,,,,
+,,,,,,,
+,SL_LP_22,"Check whether pressing Tab navigates 
+through fields correctly. Ensure the
+focus moves sequentially from one
+input field to the next.","1. Open login page
+2. Press Tab key
+3. Move from username ,password ,login
+4. Verify focus order",https://www.saucedemo.com/,"Focus should move logically through input fields
+and buttons using the Tab key. Each field and 
+interactive element must be reachable in the correct
+order. ","Tab navigation worked correctly. Focus moved 
+sequentially through all input fields and buttons. No
+ elements were skipped or inaccessible via keyboard.",PASS
+,,,,,,,
+,,,,,,,
+,SL_LP_23,"Check whether the login page logo is
+displayed. Ensure the logo is visible, 
+properly aligned, and clearly rendered.
+","1. Open login page
+2. Locate page logo
+3. Verify visibility
+4. Ensure logo is clear",https://www.saucedemo.com/,"Logo should be visible and positioned correctly on 
+the login page. It must be clearly rendered without 
+distortion or overlap with other elements. The logo 
+should match the expected branding.","Logo displayed clearly at the top of the page. It was 
+properly positioned and aligned. No distortion or visibility
+ issues were observed.",PASS
+,,,,,,,
+,,,,,,,
+,SL_LP_24,"Check whether password reveal (eye
+ icon, if available) works. Ensure that
+ clicking the icon toggles the password
+ field between masked and visible text.","1. Open login page
+2. Enter password
+3. Click “eye” icon
+4. Verify password becomes visible",https://www.saucedemo.com/,"Clicking the reveal icon should toggle password
+ visibility correctly. The password must switch
+ between masked and plain text instantly. The
+ functionality should work consistently for all users.","Password reveal toggled successfully. The
+ password switched correctly between masked and
+ visible text. Functionality worked consistently without 
+errors.",PASS
+,,,,,,,
+,,,,,,,
+,SL_LP_25,"Check whether copy-paste is possible
+ in the password field on the login page.
+ Ensure that users can paste a
+ password from the clipboard if allowed.","1. Open login page
+2. Copy text from another field
+3. Paste into password
+4. Attempt login",https://www.saucedemo.com/,"System allowed pasting into the password field.
+ Users could successfully paste text from the
+ clipboard. Functionality worked as expected
+ without errors.","Paste attempt allowed. Text was successfully inserted
+ into the password field from the clipboard. No 
+restrictions prevented the action.",PASS
+,,,,,,,
+,,,,,,,
+,SL_LP_26,"Check whether login page text is
+ readable in high contrast mode. Ensure
+ that all labels, placeholders, and
+ buttons remain visible.","1. Open login page
+2. Enable high contrast mode
+3. Verify text visibility
+4. Attempt login",https://www.saucedemo.com/,"Text, buttons, and links should remain visible and 
+readable in high contrast mode. All elements must 
+maintain sufficient contrast against the background. 
+No content should become difficult to see.","Text and buttons were clearly visible; login worked as 
+expected. All elements remained readable in high 
+contrast mode. No issues were observed during 
+interaction.",PASS
+,,,,,,,
+,,,,,,,
+,SL_LP_27,"Check whether login form fields have
+ proper labels. Ensure that each input 
+field (e.g., username and password)
+ has a visible and descriptive label. ","1. Open login page
+2. Inspect username and password fields
+3. Verify label presence
+4. Attempt login",https://www.saucedemo.com/,"All input fields should have proper, accessible label
+ for screen readers. Labels must clearly describe 
+ purpose of each field and be correctly linked to 
+their respective inputs. ","Labels present and accessible; login worked correctly. 
+Each input field was properly labeled, supporting screen
+ readers. No accessibility issues were observed.",PASS
+,,,,,,,
+,,,,,,,
+,SL_LP_28,"Check whether the login page shows
+ the correct error for invalid credentials.
+ Enter incorrect username and/or 
+password.","1. Open login page
+2. Enter invalid username/password
+3. Click Login
+4. Verify error message",https://www.saucedemo.com/,"System should show an appropriate error message
+ for invalid credentials. The message must be 
+clearly visible, concise, and inform the user of the
+ login failure. ","Error message displayed clearly; user was prevented 
+from logging in. The message accurately indicated 
+invalid credentials. No sensitive information was 
+exposed.",PASS
+,,,,,,,
+,,,,,,,
+,SL_LP_29,"Check login with a password exceeding
+ the maximum allowed length. Enter a
+ password longer than the defined limit
+ and verify the system’s response. ","1. Open login page
+2. Enter valid username
+3. Enter 100+ character password
+4. Click Login",https://www.saucedemo.com/,"System should prevent login and show an error for
+ password length exceeded. Users must  informed 
+that the password exceeds the allowed limit.","Error displayed correctly; input was rejected. The
+ system prevented login with an overly long password. 
+No unexpected behavior was observed.",PASS
+,,,,,,,
+,,,,,,,
+,SL_LP_30,"Check whether the login page handles
+ browser zoom correctly. Verify that all
+ elements—including input fields, 
+buttons, labels, and logos remain visible.","1. Open login page
+2. Zoom in and out (Ctrl + / Ctrl -)
+3. Verify layout
+4. Attempt login",https://www.saucedemo.com/,"Page should remain functional, and layout should
+ adjust without overlapping elements. All input fields,
+ buttons, and labels must remain visible and 
+usable at different zoom levels. ","Login page remained usable; no layout issues occurred 
+with zooming; login worked as expected. All elements
+ stayed properly aligned and functional.",PASS
+,,,,,,,
+,,,,,,,
+,SL_LP_31,"Check whether the look and feel of the
+ buttons on the Login page are
+ user-friendly without any confusion.","1. Open Swag Labs Login page. 
+2. Inspect Login, Reset, and other buttons
+3. Observe size, color, label clarity,
+4. Attempt to click buttons and navigate.",https://www.saucedemo.com/,"Buttons should be clearly visible, labeled correctly, 
+consistent in style, and intuitive to use without
+ confusing the user.","Buttons appear inconsistent: colors and sizes differ; 
+ effects unclear.",FAIL
